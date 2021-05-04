@@ -14,7 +14,7 @@ const forecast = (lat, long, callback) => {
       } else {
         callback(
           undefined,
-          `${data.current.weather_descriptions[0]} throughout the day.It is currently ${data.current.temperature} degrees out. It feels like ${data.current.feelslike} degrees.`
+          `${data.current.weather_descriptions[0]} throughout the day.It is currently ${data.current.temperature} degrees out. It feels like ${data.current.feelslike} degrees.The humidity is ${data.current.humidity}% .`
         );
       }
     })
